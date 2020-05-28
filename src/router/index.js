@@ -25,11 +25,11 @@ const routes = [
       import(/* webpackChunkName: "rayman" */ '../views/rayman/Index.vue')
   },
   {
-    path: '/kmoonlight/:name',
-    name: 'Kmoonlight',
+    path: '/kmmoonlight/:name',
+    name: 'Kmmoonlight',
     component: () =>
       import(
-        /* webpackChunkName: "kmoonlight" */ '../views/kmoonlight/Index.vue'
+        /* webpackChunkName: "kmoonlight" */ '../views/kmmoonlight/Index.vue'
       )
   }
 ]
