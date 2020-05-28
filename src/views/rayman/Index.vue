@@ -7,7 +7,7 @@
 -->
 <template>
   <div class="about">
-    <h1>This is Rayman’s</h1>
+    <h1>Rayman coming</h1>
     <component :is="componentName" />
   </div>
 </template>
