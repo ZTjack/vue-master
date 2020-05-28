@@ -6,38 +6,38 @@
  * @Description:
  */
 
-import Vue from "vue";
-import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import Home from '../views/Home.vue'
 
-Vue.use(VueRouter);
+Vue.use(VueRouter)
 
 const routes = [
   {
-    path: "/",
-    name: "Home",
+    path: '/',
+    name: 'Home',
     component: Home
   },
   {
-    path: "/rayman/:name",
-    name: "Rayman",
+    path: '/rayman/:name',
+    name: 'Rayman',
     component: () =>
-      import(/* webpackChunkName: "rayman" */ "../views/rayman/Index.vue")
+      import(/* webpackChunkName: "rayman" */ '../views/rayman/Index.vue')
   },
   {
-    path: "/kmoonlight/:name",
-    name: "Kmoonlight",
+    path: '/kmoonlight/:name',
+    name: 'Kmoonlight',
     component: () =>
       import(
-        /* webpackChunkName: "kmoonlight" */ "../views/kmoonlight/Index.vue"
+        /* webpackChunkName: "kmoonlight" */ '../views/kmoonlight/Index.vue'
       )
   }
-];
+]
 
 const router = new VueRouter({
-  mode: "history",
+  mode: 'history',
   base: process.env.BASE_URL,
   routes
-});
+})
 
-export default router;
+export default router
