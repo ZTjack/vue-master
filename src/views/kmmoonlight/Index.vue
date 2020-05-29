@@ -15,12 +15,23 @@
 import Hook from './Hook.vue'
 import Template from './Template.vue'
 import Computed from './Computed.vue'
+import Style from './Style.vue'
+import Render from './Render.vue'
+import Event from './Event.vue'
+import FormBind from './FormBind.vue'
+import ComponentBase from './ComponentBase.vue'
+
 export default {
   name: 'Kmmoonlight',
   components: {
     Hook,
     Template,
-    Computed
+    Computed,
+    Style,
+    Render,
+    Event,
+    FormBind,
+    ComponentBase
   },
   data() {
     return {
@@ -28,7 +39,6 @@ export default {
     }
   },
   created: function() {
-    console.log(this.$route.params.name)
     this.componentName = this.$route.params.name
   }
 }
