@@ -22,6 +22,7 @@ import FormBind from './FormBind.vue'
 import ComponentBase from './ComponentBase.vue'
 import Demo from './Demo.vue'
 import GridLayout from './GridLayout.vue'
+import AccountChoose from './AccountChoose'
 
 export default {
   name: 'Kmmoonlight',
@@ -35,7 +36,8 @@ export default {
     FormBind,
     ComponentBase,
     Demo,
-    GridLayout
+    GridLayout,
+    AccountChoose
   },
   data() {
     return {
