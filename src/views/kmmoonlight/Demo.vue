@@ -48,17 +48,17 @@ export default {
       cartCounter: 0
     }
   },
+  computed: {
+    nowImage: function() {
+      return this.imageArray[this.nowColor === 'green' ? 0 : 1]
+    }
+  },
   methods: {
     changeSocksType: function(color) {
       this.nowColor = color
     },
     addToCart: function() {
       this.cartCounter++
-    }
-  },
-  computed: {
-    nowImage: function() {
-      return this.imageArray[this.nowColor === 'green' ? 0 : 1]
     }
   }
 }

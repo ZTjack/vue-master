@@ -21,6 +21,7 @@ import Event from './Event.vue'
 import FormBind from './FormBind.vue'
 import ComponentBase from './ComponentBase.vue'
 import Demo from './Demo.vue'
+import GridLayout from './GridLayout.vue'
 
 export default {
   name: 'Kmmoonlight',
@@ -33,7 +34,8 @@ export default {
     Event,
     FormBind,
     ComponentBase,
-    Demo
+    Demo,
+    GridLayout
   },
   data() {
     return {
