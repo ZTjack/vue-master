@@ -7,12 +7,12 @@
 -->
 <template>
   <div class="about">
-    <h1>Rayman coming</h1>
     <component :is="componentName" />
   </div>
 </template>
 
 <script>
+import FundsTransfer from './FundsTransfer'
 import Lesson1 from './Lesson1'
 import Lesson2 from './Lesson2'
 import Lesson3 from './Lesson3'
@@ -20,6 +20,7 @@ import Lesson3 from './Lesson3'
 export default {
   name: 'Rayman',
   components: {
+    FundsTransfer,
     Lesson1,
     Lesson2,
     Lesson3
