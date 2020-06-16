@@ -201,10 +201,6 @@
             outline: none;
             border: none;
         }
-        :after {
-            width: 100px;
-        }
-
     }
     input::-webkit-input-placeholder{
         font-size: 14px;
